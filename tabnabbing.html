@@ -3,9 +3,11 @@
 <head>
   <title>Tab Jahat</title>
   <script>
-    setTimeout(() => {
+     setTimeout(() => {
       if (window.opener) {
-        window.opener.location = "https://example.com/fake-login";
+        window.opener.location = "https://example.com";
+      } else {
+        document.body.innerHTML += "<p>window.opener tidak tersedia</p>";
       }
     }, 3000);
   </script>
